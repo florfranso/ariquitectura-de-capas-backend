@@ -12,16 +12,9 @@ const objArguments = minimist(process.argv.slice(2), argOptions);
 
 
 const options = {
-   /* mariaDB: {
-        client: "mysql",
-        connection: {
-            host: "127.0.0.1",
-            user: "root",
-            database: "MiPrimerDB"
-        }
-    },*/
+
     fileSystem: {
-        path: './DB'
+        path: ''
     },
     sqliteDB: {
         client: "sqlite",

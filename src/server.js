@@ -30,4 +30,4 @@ if (options.server.MODO === "CLUSTER" && cluster.isPrimary) {
     //midlewares
 app.use(express.json());
 
-app.use("/api/users",userRouter);
+app.use("/api/users", userRouter);
