@@ -1,5 +1,5 @@
-import UserManagerMongo from "./manager/user.manager";
-import { UserModel } from "./dbModels/user.model";
+import UserManagerMongo from "./manager/user.manager.js";
+import { UserModel } from "./dbModels/user.model.js";
 
 const userManager = new UserManagerMongo(UserModel);
 

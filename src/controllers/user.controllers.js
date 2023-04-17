@@ -1,6 +1,6 @@
 //importar capa de servicio
 //const {getUsers,saveUser} = require("../services/user.service");
-import { getUsers, saveUser } from "../services/user.service";
+import { getUsers, saveUser } from "../services/user.service.js";
 
 const getUsersController = async(req,res)=>{
     try {
@@ -23,4 +23,4 @@ const postUserController = async(req,res)=>{
 }
 
 //module.exports = {getUsersController,postUserController}
-export default {getUsersController, postUserController}
+export {getUsersController, postUserController};
