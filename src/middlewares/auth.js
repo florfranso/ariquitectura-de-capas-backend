@@ -15,3 +15,5 @@ const userNotLogged = (req,res,next)=>{
         next();
     }
 }
+
+export {checkLogged, userNotLogged}

@@ -67,4 +67,6 @@ class ProductManagerMongo{
     }
 }
 
-export default ProductManagerMongo
+export {ProductManagerMongo}
+
+

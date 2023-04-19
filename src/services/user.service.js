@@ -10,5 +10,4 @@ const saveUser = async(user)=>{
 
 
 
-//module.exports = {getUsers,saveUser};
 export {getUsers, saveUser};

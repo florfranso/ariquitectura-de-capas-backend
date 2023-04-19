@@ -1,16 +1,21 @@
-//const express = require("express");
 import express from 'express';
 
 //importamos la capa de controlador
-//const {getUsersController,postUserController} = require("../controllers/user.controller");
 import {getUsersController, postUserController} from "../controllers/user.controllers.js"
 
-const router = express();
+
+const userRouter = express.Router();
 
 //definir las rutas para usuarios
-router.get("/",getUsersController);
-router.post("/",postUserController);
+userRouter.get("/",getUsersController);
+userRouter.post("/",postUserController);
+userRouter.post('/login',);
+userRouter.get('/home',);
+userRouter.post('/register',);
+userRouter.get('/perfil',);
+userRouter.post('/perfil',);
+//userRouter.get ("/logout", UsersLogoutController);
 
 
 //module.exports = {userRouter:router};
-export {router as userRouter}
+export {userRouter}
