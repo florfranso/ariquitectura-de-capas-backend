@@ -10,10 +10,7 @@ const carritosSchema = new mongoose.Schema({
         type: [],
         require: true
     }
-},
-    {
-        timestamps: true
-    });
+})
 
 const CarritoModel = mongoose.model(carritosCollection, carritosSchema);
 

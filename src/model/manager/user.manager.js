@@ -39,4 +39,4 @@ class UserManagerMongo{
     };
 }
 
-export default UserManagerMongo;
+export {UserManagerMongo};

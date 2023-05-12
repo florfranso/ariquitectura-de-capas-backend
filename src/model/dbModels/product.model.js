@@ -18,12 +18,12 @@ const productsSchema = new mongoose.Schema({
     price: {
         type: String,
         require: true
+    },
+    imagen: {
+        type: String,
+        require: true
     }
-},
-    {
-        timestamps: true
-    });
-
+})
 const ProductModel = mongoose.model(productCollection, productsSchema);
 
 export { ProductModel }

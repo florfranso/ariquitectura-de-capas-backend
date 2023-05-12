@@ -7,8 +7,6 @@ dotenv.config();
 const argOptions = { alias: { m: "modo", p: "port" }, default: { modo: "FORK", port: 8080 } };
 
 const objArguments = minimist(process.argv.slice(2), argOptions);
-// console.log(objArguments);
-
 
 
 const options = {
@@ -16,14 +14,6 @@ const options = {
     fileSystem: {
         path: ''
     },
-    sqliteDB: {
-        client: "sqlite",
-        connection: {
-            filename: path.join("../DB/chatdb.sqlite")
-        },
-        useNullAsDefault: true
-    },
-
     server: {
         MODO: objArguments.modo,
         PORT: objArguments.port

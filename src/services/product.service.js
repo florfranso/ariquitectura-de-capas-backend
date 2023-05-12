@@ -1,4 +1,4 @@
-import { productManager } from "../models/index.js";
+import { productManager } from "../model/index.js";
 
 const getProductos = async () => {
     return await productManager.getAll();

@@ -68,4 +68,4 @@ class CarritosManagerMongo{
     }
 }
 
-export default CarritosManagerMongo
+export {CarritosManagerMongo}

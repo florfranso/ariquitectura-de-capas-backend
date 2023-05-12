@@ -1,4 +1,4 @@
-import userManager from "../model/index.js";
+import {userManager} from "../model/index.js";
 
 const getUsers = async()=>{
     return await userManager.getAll();

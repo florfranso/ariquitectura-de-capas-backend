@@ -1,5 +1,5 @@
-import { getCarritos, addCarrito, getCarritoById, updateCarrito, deleteCarritoById, deleteAllCarritos } from "../services/carritos.services.js"
-import { getProductById } from "../services/productos.services.js"
+import { getCarritos, addCarrito, getCarritoById, updateCarrito, deleteCarritoById, deleteAllCarritos } from "../services/carts.service.js"
+import { getProductById } from "../services/product.service.js"
 
 const getCarritosControllers = async (req, res) => {
     let carritos = await getCarritos()

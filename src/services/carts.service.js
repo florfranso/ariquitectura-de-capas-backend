@@ -1,4 +1,4 @@
-import { carritosManager } from "../models/index.js";
+import { carritosManager } from "../model/index.js";
 
 const getCarritos = async () => {
     return await carritosManager.getAll();
